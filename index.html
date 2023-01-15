@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Portfolio</title>
+    <script src="https://kit.fontawesome.com/3846ce632a.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="header">
@@ -43,25 +44,25 @@
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, adipisci magni. Itaque ipsam qui consequatur? Assumenda atque voluptatem laudantium a dolore dignissimos sunt itaque natus vel voluptates, aliquam accusamus quis id iusto magni, suscipit, libero quas. Esse unde, sapiente rem a eaque, laudantium error corporis culpa id hic molestias ipsa.</p>
 
                     <div class="tab-titles">
-                        <p class="tab-links active-link">Skills</p>
-                        <p class="tab-links">Experience</p>
-                        <p class="tab-links">Education</p>
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
                     </div>
-                    <div class="tab-contents">
+                    <div class="tab-contents active-tab" id="skills">
                         <ul>
                             <li><span>UI/UX</span><br>Designing Web Interface</li>
                             <li><span>Web Development</span><br>Web app Development</li>
                             <li><span>App Development</span><br>Building Android/IOS App</li>
                         </ul>
                     </div>
-                    <div class="tab-contents">
+                    <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>2027-2029</span><br>Team Lead </li>
+                            <li><span>2027-2029</span><br>Team Lead MIXUE</li>
                             <li><span>2024-2025</span><br>Internship at Gojek Indonesia</li>
                             <li><span>2023-2024</span><br>Internship at Amazon</li>
                         </ul>
                     </div>
-                    <div class="tab-contents">
+                    <div class="tab-contents" id="education">
                         <ul>
                             <li><span>2026</span><br>STMIK AMIK Riau</li>
                             <li><span>2022</span><br>MAN 2 Pekanbaru</li>
@@ -73,6 +74,36 @@
             </div>
         </div>
     </div>
+    <!-- ==================
+            Services
+        ======================
+    -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, nesciunt.</p>
+                    <a href="">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, harum.</p>
+                    <a href="">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nesciunt voluptas fuga mollitia autem maxime?</p>
+                    <a href="">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
 
     <script src="script.js"></script>
 </body>
